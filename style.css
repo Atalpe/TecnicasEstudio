@@ -9,7 +9,7 @@
 
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Sanchez', sans-serif;
     margin: 0;
     padding: 0;
     color: var(--dark);
@@ -56,46 +56,78 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
+    color: var(--light);
+}
+
+h2 {
     color: var(--primary);
 }
 
 footer {
+    font-family: 'Sanchez', sans-serif;
     background-color: var(--dark);
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-.contacto, .chat {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 20px;
+.contacto {
+    display: flex; /* Usamos flexbox para una mejor alineación */
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    align-items: center; /* Centramos horizontalmente */
+    padding: 30px; /* Espacio interno */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: 'Sanchez', sans-serif; /* Fuente moderna y legible */
+    font-size: 16px; /* Tamaño de fuente base */
+    line-height: 1.6; /* Interlineado cómodo */
+}
+
+.contacto h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 500; /* Peso de fuente medio */
+    letter-spacing: 1px; /* Espaciado entre letras sutil */
+}
+
+.contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacto li {
+    margin-bottom: 10px;
 }
 
 .contacto a {
-    color: var(--secondary);
+    color: var(--secondary); 
     text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+    font-weight: 400;
 }
 
 .contacto a:hover {
+    color: var(--accent); 
+}
+
+/* Estilos para iconos de redes sociales (opcional) */
+.contacto a[href*="facebook"]::before {
+    /* content: "\f09a"; Código Unicode para el icono de Facebook */
+    font-family: "Font Awesome 5 Brands";
+    margin-right: 5px;
+}
+
+.contacto a[href*="twitter"]::before {
+    /* content: "\f099"; Código Unicode para el icono de Twitter */
+    font-family: "Font Awesome 5 Brands";
+    margin-right: 5px;
+}
+.contacto a:hover {
     text-decoration: underline;
-}
-
-.chat {
-    /* Asegúrate de que el contenedor tenga suficiente altura y ancho */
-    height: 40px; /* Ajusta según sea necesario */
-    width: 100px; /* Ajusta según sea necesario */
-    /* Otros estilos que desees aplicar */
-}
-
-.chat button {
-    background-color: var(--secondary); /* O el color que prefieras */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* Estilos específicos para cada sección */
@@ -115,48 +147,5 @@ footer {
     border-left: 5px solid var(--dark);
 }
 
-/* Estilos generales del foro */
-.foro {
-    width: 80%; /* Ajusta el ancho según tus preferencias */
-    margin: 0 auto; /* Centra el foro horizontalmente */
-    font-family: sans-serif; /* Elige una fuente legible */
-  }
-  
-/* Estilos para las preguntas */
-.pregunta {
-border: 1px solid #ccc; /* Borde sutil para separar las preguntas */
-padding: 20px;
-margin-bottom: 20px;
-}
 
-.pregunta h2 {
-font-size: 1.5em; /* Tamaño de fuente más grande para el título */
-margin-bottom: 10px;
-}
-
-.pregunta .detalles {
-font-size: 0.9em;
-color: #666; /* Color más tenue para los detalles */
-margin-bottom: 15px;
-}
-
-/* Estilos para las respuestas */
-.respuesta {
-border-left: 3px solid #eee; /* Borde izquierdo para distinguir las respuestas */
-padding: 15px;
-margin-bottom: 10px;
-background-color: #f9f9f9; /* Fondo sutil para las respuestas */
-}
-
-.respuesta .detalles {
-font-size: 0.8em;
-color: #888;
-margin-top: 10px;
-}
-
-/* Estilos para los botones */
-.botones {
-display: flex; /* Alinea los botones horizontalmente */
-justify-content: flex-end; /* Alinea los botones a la derecha */
-}
 

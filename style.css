@@ -78,8 +78,9 @@ footer {
 
 table {
     border-collapse: collapse; 
-    width: 80%; /* Ajusta el ancho según tus preferencias */
+    width: 70%; /* Ajusta el ancho según tus preferencias */
     margin: 0 auto; /* Centra la tabla horizontalmente */
+    font-size: 20px;
 }
 
 th, td {

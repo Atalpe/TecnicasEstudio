@@ -22,7 +22,9 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
+
 
 nav ul {
     list-style: none;
@@ -45,13 +47,15 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 60px;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
 section {
     margin-bottom: 30px;
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -70,6 +74,25 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+table {
+    border-collapse: collapse; 
+    width: 80%; /* Ajusta el ancho según tus preferencias */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+}
+
+th, td {
+    border: 1px solid #a09e9e; /* Bordes de celdas */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary); /* Azul primario para un fondo llamativo */
+    color: var(--light); /* Texto blanco para contraste */
+    font-weight: bold; 
+    padding: 12px; /* Aumentamos un poco el padding para mayor comodidad visual */
 }
 
 .contacto {
@@ -132,20 +155,33 @@ footer {
 
 /* Estilos específicos para cada sección */
 #antiguas {
-    border-left: 5px solid var(--secondary);
+    border-left: 7px solid var(--secondary);
 }
 
 #nuevas {
-    border-left: 5px solid var(--accent);
+    border-left: 7px solid var(--accent);
 }
 
 #comparacion {
-    border-left: 5px solid var(--primary);
+    border-left: 7px solid var(--primary);
 }
 
 #pqr {
-    border-left: 5px solid var(--dark);
+    border-left: 7px solid var(--dark);
 }
+
+#antiguas p, #nuevas p, #comparacion p, #pqr p {
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+}
+
+#antiguas h2, #nuevas h2, #comparacion h2, #pqr h2 {
+    font-size: 30px; /* Ajusta el tamaño según tus preferencias */
+}
+
+#antiguas li, #nuevas li, #comparacion li, #pqr li {
+    font-size: 20px; /* Ajusta el tamaño según tus preferencias */
+}
+
 
 
 

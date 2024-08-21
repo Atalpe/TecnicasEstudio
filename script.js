@@ -48,26 +48,7 @@ sendButton.addEventListener('click', () => {
     }
 });
 
-// Estilos básicos para el chat (puedes personalizarlos)
-// const style = document.createElement('style');
-// style.textContent = `
-// .chat-container {
-//     position: fixed;
-//     bottom: 20px;
-//     right: 20px;
-//     width: 300px;
-//     background-color: white;
-//     border: 1px solid #ccc;
-//     border-radius: 5px;
-//     padding: 10px;
-// }
 
-// .chat-messages {
-//     height: 200px;
-//     overflow-y: auto;
-//     margin-bottom: 10px;
-// }
-// `;
 // Función para crear un nuevo hilo de discusión
 function crearHilo(pregunta) {
     const hilo = document.createElement('article'); // Cambiamos a 'article' para mantener la estructura HTML

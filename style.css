@@ -1,7 +1,7 @@
 /* Paleta de colores */
 :root {
     --primary: #2980b9; /* Azul primario (se mantiene igual) */
-    --secondary: #f1c40f; /* Amarillo dorado (más brillante y accesible) */
+    --secondary: #d8af09; /* Amarillo dorado (más brillante y accesible) */
     --accent: #c0392b; /* Rojo oscuro (más profundo y elegante) */
     --light: #f8f9fa; /* Blanco casi puro (mejora el contraste) */
     --dark: #2c3e50; /* Gris azulado oscuro (más sofisticado) */
@@ -19,7 +19,7 @@ body {
 header {
     background-color: var(--primary);
     color: white;
-    padding: 20px;
+    padding: 2%;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -33,8 +33,8 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
-}
+    margin-right: 5%;
+} 
 
 nav a {
     color: white;
@@ -47,17 +47,17 @@ nav a:hover {
 }
 
 main {
-    padding: 60px;
-    margin-left: 110px;
-    margin-right: 110px;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 2%;
     background-color: white;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+    border-radius: 1%;
+    box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -72,29 +72,36 @@ footer {
     font-family: 'Sanchez', sans-serif;
     background-color: var(--dark);
     color: white;
-    padding: 20px;
+    padding: 8%;
     text-align: center;
 }
 
 table {
     border-collapse: collapse; 
-    width: 70%; /* Ajusta el ancho según tus preferencias */
-    margin: 0 auto; /* Centra la tabla horizontalmente */
-    font-size: 20px;
+    width: 0% auto; /* Ajusta el ancho según tus preferencias */
+    margin: 0% auto; /* Centra la tabla horizontalmente */
+    font-size: 18px;
+    /* table-layout: auto;  */
 }
+
 
 th, td {
     border: 1px solid #a09e9e; /* Bordes de celdas */
-    padding: 8px;
+    padding: 1%;
     text-align: left;
+
 }
+
 
 th {
     background-color: var(--primary); /* Azul primario para un fondo llamativo */
     color: var(--light); /* Texto blanco para contraste */
     font-weight: bold; 
-    padding: 12px; /* Aumentamos un poco el padding para mayor comodidad visual */
+    padding: 1%; /* Aumentamos un poco el padding para mayor comodidad visual */
+    flex: 1; 
 }
+
+
 
 .contacto {
     display: flex; /* Usamos flexbox para una mejor alineación */
@@ -183,6 +190,18 @@ th {
     font-size: 20px; /* Ajusta el tamaño según tus preferencias */
 }
 
+#antiguas h2 {
+    color: var(--secondary)
+}
+
+#nuevas h2 {
+    color: var(--accent)
+}
+
+
+#pqr h2 {
+    color: var(--dark)
+}
 
 
 

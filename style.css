@@ -1,10 +1,10 @@
 /* Paleta de colores */
 :root {
-    --primary: #2980b9; /* Azul primario */
-    --secondary: #f39c12; /* Naranja secundario */
-    --accent: #e74c3c; /* Rojo acento */
-    --light: #f5f5f5; /* Gris claro */
-    --dark: #34495e; /* Gris oscuro */
+    --primary: #2980b9; /* Azul primario (se mantiene igual) */
+    --secondary: #f1c40f; /* Amarillo dorado (más brillante y accesible) */
+    --accent: #c0392b; /* Rojo oscuro (más profundo y elegante) */
+    --light: #f8f9fa; /* Blanco casi puro (mejora el contraste) */
+    --dark: #2c3e50; /* Gris azulado oscuro (más sofisticado) */
 }
 
 /* Estilos generales */
